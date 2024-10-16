@@ -19,8 +19,7 @@ const verifyCode = async (req, res) => {
         userId,
       },
     });
-    console.log(originalCode)
-
+    
     if (!originalCode) {
       return res.status(404).json({
         success: false,
